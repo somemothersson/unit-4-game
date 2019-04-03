@@ -3,10 +3,10 @@ let randomNumber = 0;
 let wins = 0;
 let losses = 0;
 let counter = 0;
-let tile1 = 0;
-let tile2 = 0;
-let tile3 = 0;
-let tile4 = 0;
+// let tile1 = 0;
+// let tile2 = 0;
+// let tile3 = 0;
+// let tile4 = 0;
 let values = [];
 
 
@@ -28,21 +28,32 @@ $(document).ready(function () {
 
  
     //Click Tile
-    $("button").on("click", function () {
-        console.log("click", this.value);
-        while (counter < randomNumber){
-            if ()
-
-
-
+    //random number click
+    $("button").on("click", function (value) {
+        
+            //each button click increases counter
+            var inc = parseInt($(this).attr('value')); 
+            counter += inc;
+            console.log(counter)
+            //win
+            if (randomNumber == counter){
+            wins ++;
+            reset();
+            console.log("win: ", wins)
+        } else if (counter > randomNumber){
+            losses ++
+            reset();
+            console.log("losses: ", losses)
         }
-       
+             
 
         
 
 
-        //if clicked add value to counter
-    });    
+
+        
+    });  
+        
 
     
 
@@ -71,16 +82,13 @@ function genNum() {
   
 
 }
-function tileAppend() {
-    $(".btn1").val(values[0]);
-    console.log()
 
 
-}
+
 
 function reset() {
     let counter = 0;
-    $("#button").val(tileGen);
+    genNum();
 
 
 
