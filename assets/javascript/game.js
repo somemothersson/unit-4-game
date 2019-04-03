@@ -3,7 +3,13 @@ let randomNumber = 0;
 let wins = 0;
 let losses = 0;
 let counter = 0;
-let tileVal = [];
+// let tileVal = {
+//     gc1: 0,
+//     gc2: 0,
+//     gc3: 0,
+//     gc4: 0,
+
+// }
 
 
 //Create an Object to store numbers for each tile
@@ -22,6 +28,20 @@ $(document).ready(function () {
     let randGen = Math.ceil(Math.random() * 120 + 19);
     tileAppend();   
     console.log(randGen)
+    let tileVal = {
+        gc1: 0,
+        gc2: 0,
+        gc3: 0,
+        gc4: 0,
+
+        tileRand:function (){
+            this.gc1 = this.tileAppend;
+
+
+
+        }
+    
+    }
     //Click Tile to add value to Score
     $(".btn1, .btn2, .btn3, .btn4").on("click", function () {
         console.log("click", this.value);
@@ -44,6 +64,7 @@ $(document).ready(function () {
 function tileAppend() {
     let tileGen = Math.ceil(Math.random() * 12 + 1);
     console.log(tileGen);
+    for 
 
     $(".btn1, .btn2, .btn3, .btn4").val(tileGen);
 
