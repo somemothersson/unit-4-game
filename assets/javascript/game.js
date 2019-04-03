@@ -3,10 +3,7 @@ let randomNumber = 0;
 let wins = 0;
 let losses = 0;
 let counter = 0;
-let tileOne = 0;
-let tileTwo = 0;
-let tileThree = 0;
-let tileFour = 0;
+let tileVal = [];
 
 
 //Create an Object to store numbers for each tile
