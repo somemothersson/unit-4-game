@@ -19,7 +19,7 @@ $(document).ready(function () {
     
 
     //Generate randomGeorge for Each Tile Between 1 and 12 
-    genNum();
+    reset();
     console.log(randomNumber)
     console.log(values)
     
@@ -36,10 +36,14 @@ $(document).ready(function () {
             counter += inc;
             console.log(counter)
             //win
+            //IF Score = Random Number = Win
+    
             if (randomNumber == counter){
             wins ++;
-            reset();
             console.log("win: ", wins)
+            //Reset 
+            reset();
+            
         } else if (counter > randomNumber){
             losses ++
             reset();
@@ -87,25 +91,9 @@ function genNum() {
 
 
 function reset() {
-    let counter = 0;
+    counter = 0;
     genNum();
 
 
 
 }
-
-
-// let tileVal = {
-//     gc1: 0,
-//     gc2: 0,
-//     gc3: 0,
-//     gc4: 0,
-
-//     tileRand:function (){
-//         this.gc1 = this.tileAppend;
-
-
-
-//     }
-
-// }
