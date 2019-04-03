@@ -1,0 +1,76 @@
+/* header { grid-area: header; }
+.inst { grid-area: inst; }
+.random { grid-area: random; }
+.row-3 { grid-area: row-3; }
+.winloss { grid-area: winloss; }
+.george { grid-area: george; }
+.score{ grid-area: score; }
+.counter{ grid-area: counter; } */
+
+
+
+
+/* .grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'inst inst inst inst'
+    'random random random winloss'
+    'george george george george'
+    'score score score score'
+    'counter counter counter counter';
+    padding: 20px;
+    text-align: center; */
+.george {
+    display: flex;
+    
+
+
+}
+.row-3{
+    display: flex
+}    
+
+
+
+}
+header {
+    background-color: blue;
+    border: 30px;
+    border-color: antiquewhite;
+    color: red;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 30px;
+    
+}
+.inst {
+    background-color: darkgreen;
+}
+.random {
+    background-color: lightcoral;
+}
+.winloss {
+    background-color: lightcyan;
+}
+.row-3 {
+    background-color: lightcyan;
+}
+.george {
+    background-color: darkcyan;
+}
+.score{
+    background-color: darkgoldenrod;
+}
+.counter {
+    background-color: darkmagenta;
+}
+button {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+ 
+   
+  }

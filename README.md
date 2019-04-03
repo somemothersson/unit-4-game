@@ -1,6 +1,6 @@
 # unit-4-game
 - [x] Build out folder structure
-- [x] Create Readme
+- [x] Create `Readme`
 - [x] Submit Links to BCS
 - [ ] Create Basic HTML Layout
 - [ ] Get Javascript Working
