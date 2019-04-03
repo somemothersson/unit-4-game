@@ -15,25 +15,30 @@ let values = [];
 
 $(document).ready(function () {
     //Generate a GOAL radom Number between 19 and 120
-    let randGen = Math.ceil(Math.random() * 120 + 19);
-    randomNumber = randGen;
-    console.log(randomNumber)
+   
+    
 
     //Generate randomGeorge for Each Tile Between 1 and 12 
-    tileAppend();
-    
-    // console.log(tile1, tile2, tile3, tile4);
+    genNum();
+    console.log(randomNumber)
     console.log(values)
     
+    // console.log(tile1, tile2, tile3, tile4);
+
+
  
     //Click Tile
-    $(".btn1, .btn2, .btn3, .btn4").on("click", function () {
+    $("button").on("click", function () {
         console.log("click", this.value);
-        // while (counter < randomNumber){
-        counter + this.value;
-        console.log("counter", counter)
+        while (counter < randomNumber){
+            if ()
 
-        // }
+
+
+        }
+       
+
+        
 
 
         //if clicked add value to counter
@@ -49,36 +54,27 @@ $(document).ready(function () {
 
 });
 //Generate randomGeorge for Each Tile Between 1 and 12  
-function tileAppend() {
+function genNum() {
+    let randGen = Math.ceil(Math.random() * 120 + 19);
+    randomNumber = randGen;
     while(values.length < 4){
         let tileGen = Math.floor(Math.random() * 12) + 1;
         if(values.indexOf(tileGen) === -1) values.push(tileGen);
 
-    // let tileGen1 = Math.ceil(Math.random() * 12 + 1);
-    // tile1 = tileGen1;
-    // $(".btn1").val(tileGen1);
-    // let tileGen2 = Math.ceil(Math.random() * 12 + 1);
-    // tile2 = tileGen2;
-    // $(".btn2").val(tileGen2);
-    // let tileGen3 = Math.ceil(Math.random() * 12 + 1);
-    // tile3 = tileGen3;
-    // $(".btn3").val(tileGen3);
-    // let tileGen4 = Math.ceil(Math.random() * 12 + 1);
-    // tile4 = tileGen4;
-    // $(".btn4").val(tileGen4);
-    // for (i = 0; i < 4; i++){
-    //    let tileGen = Math.ceil(Math.random() * 12 + 1);
-    //    values.push(tileGen);
-    //    tile1 = values[i]
-        // console.log(tileAppend)
-    }
-   
-    
-  
-    
 
+    }
+    $(".btn1").val(values[0]);
+    $(".btn2").val(values[1]);
+    $(".btn3").val(values[2]);
+    $(".btn4").val(values[3]);
    
   
+
+}
+function tileAppend() {
+    $(".btn1").val(values[0]);
+    console.log()
+
 
 }
 
