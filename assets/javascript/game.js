@@ -18,16 +18,17 @@ let counter = 0;
 $(document).ready(function () {
     //Generate a GOAL radom Number between 19 and 120
     let randGen = Math.ceil(Math.random() * 120 + 19);
+    tileAppend();   
     console.log(randGen)
     //Click Tile to add value to Score
-    $("#btn").on("click", function () {
-        console.log(this.value);
+    $("#button").on("click", function () {
+        console.log("click", this.value);
 
         //if clicked add value to counter
     });    
 
     
- tileAppend();   
+
 
     // $("#img").ready("on click" function)
 //If Score >RANDOM NUMBER = Lose
@@ -41,7 +42,7 @@ $(document).ready(function () {
 function tileAppend() {
     let tileGen = Math.ceil(Math.random() * 12 + 1);
     console.log(tileGen);
-    $("#btn").val(tileGen);
+    $("#button").val(tileGen);
     
   
 
@@ -49,6 +50,7 @@ function tileAppend() {
 
 function reset() {
     let counter = 0;
+    $("#button").val(tileGen);
 
 
 
