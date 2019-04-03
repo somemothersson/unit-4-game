@@ -3,6 +3,11 @@ let randomNumber = 0;
 let wins = 0;
 let losses = 0;
 let counter = 0;
+let tileOne = 0;
+let tileTwo = 0;
+let tileThree = 0;
+let tileFour = 0;
+
 
 //Create an Object to store numbers for each tile
 // let tiles = {
@@ -21,7 +26,7 @@ $(document).ready(function () {
     tileAppend();   
     console.log(randGen)
     //Click Tile to add value to Score
-    $("#button").on("click", function () {
+    $(".btn1, .btn2, .btn3, .btn4").on("click", function () {
         console.log("click", this.value);
 
         //if clicked add value to counter
@@ -42,8 +47,9 @@ $(document).ready(function () {
 function tileAppend() {
     let tileGen = Math.ceil(Math.random() * 12 + 1);
     console.log(tileGen);
-    $("#button").val(tileGen);
-    
+
+    $(".btn1, .btn2, .btn3, .btn4").val(tileGen);
+
   
 
 }
