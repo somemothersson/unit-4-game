@@ -40,7 +40,7 @@ $(document).ready(function () {
     
             if (randomNumber == counter){
             wins ++;
-            $("#wins").text(wins);
+            $(".wins").text(wins);
             console.log("win: ", wins);
             //Reset 
             reset();
@@ -48,7 +48,7 @@ $(document).ready(function () {
         } else if (counter > randomNumber){
             losses ++
             reset();
-            $("#losses").text(losses);
+            $(".losses").append(losses);
             console.log("losses: ", losses);
         }
              
