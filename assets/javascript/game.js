@@ -40,14 +40,16 @@ $(document).ready(function () {
     
             if (randomNumber == counter){
             wins ++;
-            console.log("win: ", wins)
+            $("#wins").text(wins);
+            console.log("win: ", wins);
             //Reset 
             reset();
             
         } else if (counter > randomNumber){
             losses ++
             reset();
-            console.log("losses: ", losses)
+            $("#losses").text(losses);
+            console.log("losses: ", losses);
         }
              
 
