@@ -3,10 +3,6 @@ let randomNumber = 0;
 let wins = 0;
 let losses = 0;
 let counter = 0;
-// let tile1 = 0;
-// let tile2 = 0;
-// let tile3 = 0;
-// let tile4 = 0;
 let values = [];
 
 
@@ -46,9 +42,9 @@ $(document).ready(function () {
             reset();
             
         } else if (counter > randomNumber){
-            losses ++
+            losses ++;
             reset();
-            $(".losses").append(losses);
+            $(".losses").text(losses);
             console.log("losses: ", losses);
         }
              
@@ -74,6 +70,7 @@ $(document).ready(function () {
 function genNum() {
     let randGen = Math.ceil(Math.random() * 120 + 19);
     randomNumber = randGen;
+    $(".random").html("randomNumber");
     while(values.length < 4){
         let tileGen = Math.floor(Math.random() * 12) + 1;
         if(values.indexOf(tileGen) === -1) values.push(tileGen);
