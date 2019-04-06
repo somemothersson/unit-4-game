@@ -70,7 +70,7 @@ $(document).ready(function () {
 function genNum() {
     let randGen = Math.ceil(Math.random() * 120 + 19);
     randomNumber = randGen;
-    $(".random").html("randomNumber");
+    $(".random").html(randomNumber);
     while(values.length < 4){
         let tileGen = Math.floor(Math.random() * 12) + 1;
         if(values.indexOf(tileGen) === -1) values.push(tileGen);

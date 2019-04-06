@@ -48,8 +48,9 @@ header {
 .inst {
     background-color: darkgreen;
 }
-.random {
+.ran {
     background-color: lightcoral;
+    padding: 30px;
 }
 .winloss {
     background-color: lightcyan;
