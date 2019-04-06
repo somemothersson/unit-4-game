@@ -11,64 +11,43 @@ let values = [];
 
 $(document).ready(function () {
     //Generate a GOAL radom Number between 19 and 120
-   
-    
 
-    //Generate randomGeorge for Each Tile Between 1 and 12 
     reset();
 
-    console.log(randomNumber)
-    console.log(values)
-    
-    // console.log(tile1, tile2, tile3, tile4);
-
-
- 
     //Click Tile
-    //random number click
+    
     $("button").on("click", function (value) {
+        console.log("button",this.value)
         
-        //each button click increases counter
-        $(".count").text(counter)
+        //each button click increases counter with the value of the counter
         var inc = parseInt($(this).attr('value')); 
         counter += inc;
-        console.log(counter)
-        //win
-        //IF Score = Random Number = Win
-    
+        //show the counter in the window
+        $(".count").text(counter)
+      
+      
+        //IF counter score = Random Number = Win
         if (randomNumber == counter){
+        //increase the number of wins    
         wins ++;
+        //add 1 to the total number of wins in the window
         $(".wins").text(wins);
-        console.log("win: ", wins);
         //Reset 
         reset();
-       
-            
+ 
+        //else if counter Score > RANDOM NUMBER = Lose    
         } else if (counter > randomNumber){
+            //increase the losses
             losses ++;
+            //add 1 to total number of losses in the window
+            $(".losses").text(losses);
+            //reset the tiles and numbers
             reset();
             
-            $(".losses").text(losses);
-            console.log("losses: ", losses);
         }
-             
-
-        
-
-
-
         
     });  
-        
-
     
-
-//If Score >RANDOM NUMBER = Lose
-    //RESET
-//IF Score = Random Number = Win
-    //Reset 
-
-
 });
 //Generate randomGeorge for Each Tile Between 1 and 12  
 function genNum() {
@@ -79,35 +58,25 @@ function genNum() {
   
 
 }
+ //Generate randomGeorge for Each Tile Between 1 and 12 
 function tilNum(){
    while (values.length <= 4){
         let tileGen = Math.floor(Math.random() * 12) + 1;
         if(values.indexOf(tileGen) === -1) values.push(tileGen);{
 
-
-    
     $(".btn1").val(values[0]);
     $(".btn2").val(values[1]);
     $(".btn3").val(values[2]);
     $(".btn4").val(values[3]);
    
-
-
-
     }
 }
 }
-
-
-
-
+//reset the counter, the goal random number, and the values of each tile
 function reset() {
     values = [];
     counter = 0;
     genNum();
     tilNum();
-    
-
-
 
 }

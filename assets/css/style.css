@@ -56,10 +56,10 @@ header {
     background-color: lightcyan;
 }
 .row-3 {
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 .george {
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
 }
 .score{
     background-color: darkgoldenrod;
