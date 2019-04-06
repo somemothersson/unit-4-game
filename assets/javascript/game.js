@@ -19,7 +19,7 @@ $(document).ready(function () {
     $("button").on("click", function (value) {
         console.log("button",this.value)
         
-        //each button click increases counter with the value of the counter
+        //each button click increases counter with the value of the of the tile
         var inc = parseInt($(this).attr('value')); 
         counter += inc;
         //show the counter in the window
