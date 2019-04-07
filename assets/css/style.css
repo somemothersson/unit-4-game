@@ -1,26 +1,10 @@
-/* header { grid-area: header; }
-.inst { grid-area: inst; }
-.random { grid-area: random; }
-.row-3 { grid-area: row-3; }
-.winloss { grid-area: winloss; }
-.george { grid-area: george; }
-.score{ grid-area: score; }
-.counter{ grid-area: counter; } */
-
-
-
-
-/* .grid-container{
-    display: grid;
-    grid-template-areas:
-    'header header header header'
-    'inst inst inst inst'
-    'random random random winloss'
-    'george george george george'
-    'score score score score'
-    'counter counter counter counter';
-    padding: 20px;
-    text-align: center; */
+body {
+  
+    font-family: 'Gentium Basic', serif;
+    /* font-family: 'Gentium Basic', serif;
+font-family: 'Noto Serif SC', serif;
+font-family: 'Charm', cursive; */
+  }
 .george {
     display: flex;
     
@@ -33,16 +17,29 @@
 
 
 
-}
+
 header {
-    background-color: blue;
-    border: 30px;
-    border-color: antiquewhite;
-    color: red;
-    font-family: 'Bungee Outline', cursive;
-    font-size: 100px;
-    font-weight: bold;
-    letter-spacing: 30px;
+    background-color: #FCD720;
+    width: 300px;
+    height: 80px;
+    border-radius: 50%;
+    transform:rotate(-8deg);
+    white-space: nowrap;
+    box-shadow: 2px 2px#151413
+  
+}
+.sein {
+    margin-left:5%;
+    transform:rotate(8deg);
+    color: #E30922;
+    font-family: 'Gentium Basic', serif;
+    text-shadow: 2px 2px #151413;
+    font-style: italic;
+    font-size: 60px;
+    /* font-weight: bold; */
+    /* letter-spacing: 5px; */
+    
+   
     
 }
 .inst {
