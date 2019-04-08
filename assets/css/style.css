@@ -54,7 +54,6 @@ header {
     box-shadow: 2px 2px#151413
 }
 .winloss {
-
     background-color: lightcyan;
     width: 160px;
     height: 80px;
@@ -72,7 +71,7 @@ header {
     text-align: center
 
 }
-.count {
+.count{
     margin-left:5%;
     transform:rotate(-8deg) scaleY(1.5);
     text-shadow: 1px 1px #151413;
@@ -91,6 +90,7 @@ header {
     transform:rotate(8deg);
     white-space: nowrap;
     box-shadow: 2px 2px#151413;
+    text-align: center;
     
 }
 button {
