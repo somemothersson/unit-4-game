@@ -1,4 +1,4 @@
-# unit-4-game
+# Even Steven - Unit-4-Game
 - [x] Build out folder structure
 - [x] Create `Readme`
 - [x] Submit Links to BCS
@@ -6,7 +6,7 @@
 - [x] Get Javascript and jQuery funcationality Working
 - [x] Style
 - [x] Test
-- [ ] Add to Portfolio
+- [x] [Add to Portfolio](https://somemothersson.github.io/HW1-Portfolio/Basic-Portfolio/index.html)
 
 
 ### Overview
@@ -29,8 +29,12 @@ In this assignment, I had to create an interactive game for web browsers. The ap
     * The player will not know the amount until the player clicks a crystal.
     * When they do `click` one, it will update the player's score `counter`.
     * The player wins if their total score matches the `random number` from the beginning of the game.
-    * The player loses if their score goes above the `random number`.
-    * The game restarts whenever the player `wins or loses`.
-    * When the game begins again, the player should see a new random number. Also, all the `Jerry's` will have `four new hidden values`. Of        course, the user's score (and score counter) will reset to zero. 
-   * The app shows the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+4. The player loses if their score goes above the `random number`.
+
+5. The game restarts whenever the player `wins or loses`.
+
+6. When the game begins again, the player should see a new random number. Also, all the `Jerry's` will have `four new hidden values`. Of         course, the user's score (and score counter) will reset to zero. 
+
+7. The app shows the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 
