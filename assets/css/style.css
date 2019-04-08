@@ -24,7 +24,8 @@ header {
     border-radius: 50%;
     transform:rotate(-8deg);
     white-space: nowrap;
-    box-shadow: 2px 2px#151413
+    box-shadow: 2px 2px#151413;
+    margin-left: 40px;
   
 }
 .logo {
