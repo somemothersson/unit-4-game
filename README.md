@@ -19,14 +19,14 @@ In this assignment, I had to create an interactive game for web browsers. The ap
 
 1. There are four `Jerry buttons` displayed the page.
     * Each time one of these buttons is clicked the counter will increase and be diplayed via jQuery
-    * If the counter number = the random number - the player will win and the game will reset the random number   and the values of the tiles
+    * If the counter number = the random number - the player will win and the game will reset the random number and the values of the tiles
 
 2. When the game begins
     * a random number between `19 - 120` will be generated and displayed to the `Your Number to Hit:` field
 
 
 3. When the player clicks on a `Jerry`, it will add a specific amount of points to the player's total score. 
-    * The player will not know the amount until the player clicks a crystal.
+    * The player will not know the amount until the player clicks a Jerry.
     * When they do `click` one, it will update the player's score `counter`.
     * The player wins if their total score matches the `random number` from the beginning of the game.
 
